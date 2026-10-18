@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/profiles.css">
+    <script src="../js/profile.js"></script>
+    <title>LollipopEXT - Profiles</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="menu-div">
+            <div class="logo-div">
+                <div class="logo-name">
+                    <span class="Lollipop">Lollipop</span>
+                    <span class="EXT">EXT</span>
+                </div>
+                <div class="separator"></div>
+            </div>
+            <div class="menu-buttons">
+                <div id="dashboard-btn" class="dashboard-btn">
+                    <span>Dashboard</span>
+                </div>
+                <div id="sites-btn" class="sites-btn">
+                    <span>Sites</span>
+                </div>
+                <div id="profiles-btn" class="profiles-btn">
+                    <span>Profiles</span>
+                </div>
+                <div id="settings-btn" class="settings-btn">
+                    <span>Settings</span>
+                </div>
+                <div id="history-btn" class="history-btn">
+                    <span>History</span>
+                </div>
+            </div>
+            <div class="lollipop-information-div">
+                <div class="information-div">
+                    <div class="pulsating-div">
+                        <div class="stable-circle"></div>
+                        <div class="pulsating-circle"></div>
+                    </div>
+                    <span class="version">Version 0.02</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="main-content">
+            <span class="profile-txt">Profile manager:</span>
+        
+            <div class="creator-box">
+                <div class="name-box">
+                    <input class="firstName" id="firstName" type="text" placeholder="Enter your first name">
+                    <input class="lastName" id="lastName" type="text" placeholder="Enter your last name">
+                </div>
+                <div class="address-box">
+                    <input class="street" id="street" type="text" placeholder="Enter your address">
+                    <input class="houseNumber" id="houseNumber" type="text" placeholder="House number">
+                </div>
+                <div class="city-box">
+                    <input class="city" id="city" type="text" placeholder="Enter your city">
+                    <input class="postalCode" id="postalCode" type="text" placeholder="Enter the city postal code">
+                </div>
+                <div class="country-box">
+                    <input class="state" id="state" type="text" placeholder="Enter your state">
+                    <input class="country" id="country" type="text" placeholder="Enter your country">
+                </div>
+                <div class="contact-box">
+                    <input class="email" id="email" type="text" placeholder="Enter your email">
+                    <input class="phone" id="phone" type="text" placeholder="Enter your phone number">
+                </div>
+                <div class="profile-box">
+                    <input class="profileName" id="profileName" type="text" placeholder="Enter the profile name">
+                </div>
+            </div>
+            <div class="buttons">
+                <div id="createProfile" class="createProfile">
+                    <span>Create profile</span>
+                </div>
+                <div id="updateProfile" class="updateProfile">
+                    <span>Update profile</span>
+                </div>
+            </div>
+            <div class="buttons-separator"></div>
+            <div class="manage-account">
+                <span>Manage account</span>
+                <select name="selectProfile" id="selectProfile" class="selectProfile">
+                    <option value="selectProfile">Select profile</option>
+                </select>
+                <div id="deleteProfile" class="delete-btn">
+                    <span>Delete account</span>
+                </div>
+            </div>
+
+            <div id="success-notification" class="success-notification hide">
+                <div class="success-color"></div>
+                <div class="success-message">
+                    <span>Operation successful!</span>
+                </div>
+            </div>
+            <div id="error-notification" class="error-notification hide">
+                <div class="error-color"></div>
+                <div class="error-message">
+                    <span>An error occured!</span>
+                </div>
+            </div>
+            <div id="loading-notification" class="loading-notification hide">
+                <div class="loading-color"></div>
+                <div class="loading-message">
+                    <span>Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

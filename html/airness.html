@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/airness.css">
+    <script src="../js/airness.js"></script>
+    <title>LollipopEXT - History</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="menu-div">
+            <div class="logo-div">
+                <div class="logo-name">
+                    <span class="Lollipop">Lollipop</span>
+                    <span class="EXT">EXT</span>
+                </div>
+                <div class="separator"></div>
+            </div>
+            <div class="menu-buttons">
+                <div id="dashboard-btn" class="dashboard-btn">
+                    <span>Dashboard</span>
+                </div>
+                <div id="sites-btn" class="sites-btn">
+                    <span>Sites</span>
+                </div>
+                <div id="profiles-btn" class="profiles-btn">
+                    <span>Profiles</span>
+                </div>
+                <div id="settings-btn" class="settings-btn">
+                    <span>Settings</span>
+                </div>
+                <div id="history-btn" class="history-btn">
+                    <span>History</span>
+                </div>
+            </div>
+            <div class="lollipop-information-div">
+                <div class="information-div">
+                    <div class="pulsating-div">
+                        <div class="stable-circle"></div>
+                        <div class="pulsating-circle"></div>
+                    </div>
+                    <span class="version">Version 0.02</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <span class="sites-txt">Airness settings</span>
+            <div class="airness-content">
+                <div class="selectActive">
+                    <span class="active-txt">Select module status:</span>
+                    <div class="B4BSwitch">
+                        <label>
+                            <label class="switch">
+                             <input type="checkbox" type="checkbox" name="AirnessWorking" id="AirnessWorking" checked="true">
+                             <span class="slider round"></span>
+                           </label>
+                        </label>
+                    </div>
+                </div>
+                <div class="selectMode">
+                    <span class="select-mode-text">Select mode:</span>
+                    <select name="select-mode" id="select-mode" class="select-mode">
+                        <option value="select-mode">Select an option...</option>
+                        <option value="single-cart">Single cart</option>
+                        <option value="multi-cart">Max cart</option>
+                        <option value="sku-single-cart">Sku single cart</option>
+                        <option value="sku-multi-cart">Sku Max cart</option>
+                    </select>
+                    <input type="text" class="airness-sku" id="airness-sku" placeholder="Enter sku...">
+                </div>
+                <div class="selectAccount">
+                    <span class="selectAccountText">Select profile:</span>
+                    <select name="selectProfile" id="selectProfile" class="selectProfile">
+                        <option value="selectProfile">Select profile</option>
+                    </select>
+                </div>
+            </div>
+            <div id="back-to-sites-div" class="back-to-sites-div">
+                <span>Go to sites page</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

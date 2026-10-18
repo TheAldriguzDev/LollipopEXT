@@ -1,0 +1,142 @@
+{
+  "name": "LollipopEXT",
+  "description": "LollipopEXT will help you to secure the most limited items!",
+  "version": "0.1",
+  "manifest_version": 3,
+  "icons": {
+    "16": "images/lolli16.png",
+    "48": "images/lolli48.png",
+    "128": "images/lolli128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "js/crypto.js"
+      ],
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "js/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "./html/login.html",
+    "default_title": "Open LollipopEXT",
+    "default_icon": {
+      "16": "images/lolli16.png",
+      "48": "images/lolli48.png",
+      "128": "images/lolli128.png"
+    }
+  },
+  "permissions": [
+    "notifications",
+    "storage",
+    "activeTab",
+    "cookies",
+    "tabs",
+    "proxy",
+    "webRequest",
+    "scripting",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://airness.eu/it/*"
+      ],
+      "js": [
+        "modules/discord.js",
+        "modules/utils.js",
+        "modules/airness.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://www.snipes.it/p/*",
+        "*://www.snipes.com/p/*",
+        "*://www.snipes.be/nl/p/*",
+        "*://www.snipes.be/fr/p/*",
+        "*://www.snipes.fr/p/*",
+        "*://www.snipes.es/p/*",
+        "*://www.snipes.nl/p/*"
+      ],
+      "js": [
+        "modules/discord.js",
+        "modules/utils.js",
+        "modules/snipes.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://www.snipes.it/checkout?stage=placeOrder*",
+        "*://www.snipes.com/checkout?stage=placeOrder*",
+        "*://www.snipes.be/nl/checkout?stage=placeOrder*",
+        "*://www.snipes.be/fr/checkout?stage=placeOrder*",
+        "*://www.snipes.fr/checkout?stage=placeOrder*",
+        "*://www.snipes.es/checkout?stage=placeOrder*",
+        "*://www.snipes.nl/checkout?stage=placeOrder*"
+      ],
+      "js": [
+        "modules/discord.js",
+        "modules/utils.js",
+        "modules/snipesCheckout.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://www.luisaviaroma.com/*/p/*/*/*/*",
+        "*://www.luisaviaroma.com/*/p/*/*/*/*/",
+        "*://www.luisaviaroma.com/7*",
+        "*://www.luisaviaroma.com/7*/",
+        "*://www.luisaviaroma.com/*/p/*/*",
+        "*://www.luisaviaroma.com/*/p/*/*/",
+        "*://www.luisaviaroma.com/*/p/*",
+        "*://www.luisaviaroma.com/*/p/*/"
+      ],
+      "js": [
+        "modules/discord.js",
+        "modules/utils.js",
+        "modules/lvrModule.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://www.solebox.com/*/p/*.html",
+        "*://www.solebox.com/*/p/*.html/"
+      ],
+      "js": [
+        "modules/discord.js",
+        "modules/utils.js",
+        "modules/solebox.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://www.solebox.com/*/checkout?stage=placeOrder*",
+        "*://www.solebox.com/*/checkout?stage=placeOrder*"
+      ],
+      "js": [
+        "modules/discord.js",
+        "modules/utils.js",
+        "modules/soleboxCheckout.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://www.luisaviaroma.com/myarea/addresses?lolli"
+      ],
+      "js": [
+        "modules/discord.js",
+        "modules/utils.js",
+        "modules/lvr_address.js"
+      ]
+    }
+  ]
+}

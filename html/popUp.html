@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    @import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+
+    @font-face {
+        font-family: Poppins;
+        src: url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+    }
+
+    @keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+    }
+
+    @-moz-keyframes fadein { /* Firefox */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-webkit-keyframes fadein { /* Safari and Chrome */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-o-keyframes fadein { /* Opera */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    body {
+        width: 1920;
+        height: 1080;
+        background-color: aquamarine;
+    }
+
+    .lollipopUp{
+        position: absolute;
+        z-index: 1000;
+        bottom: 15px;
+        left: 15px;
+        width: 300px;
+        height: 200px;
+        background-color: rgba(34.00000177323818, 34.00000177323818, 49.00000087916851, 1);;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .logo-div{
+        height: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lollipop {
+        color: rgba(241.00000083446503, 241.00000083446503, 241.00000083446503, 1);
+        font-size: 20px;
+        font-family: Poppins;
+    }
+
+    .ext {
+        color: #98A8F8;
+        font-size: 20px;
+        font-family: Poppins;
+    }
+
+    .separator{
+        width: 60%;
+        height: 1px;
+        border-radius: 7px;
+        background-color: rgba(241.00000083446503, 241.00000083446503, 241.00000083446503, 1);
+    }
+
+    .notifications{
+        background-color: rgba(42.889582961797714, 42.889582961797714, 59.50000025331974, 1);
+        margin-top: 5px;
+        width: 85%;
+        height: 75%;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-y: scroll;
+    }
+
+    .new-notification{
+        background-color: rgba(57.98593729734421, 57.98593729734421, 78.62500101327896, 1);
+        height: 30px;
+        width: 95%;
+        border-radius: 7px;
+        margin-top: 5px;
+        margin-left: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 30px;
+        animation: fadein 1.2s;
+        -moz-animation: fadein 1.2s; /* Firefox */
+        -webkit-animation: fadein 1.2s; /* Safari and Chrome */
+        -o-animation: fadein 1.2s; /* Opera */
+    }
+
+    .general-header{
+        background-color: #98A8F8;
+        width: 5px;
+        height: 100%;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+
+    .success-header{
+        background-color: #A7E9AF;
+        width: 5px;
+        height: 100%;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+
+    .failed-header{
+        background-color: #D35D6E;
+        width: 5px;
+        height: 100%;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+
+    .loading-header{
+        background-color: #F2D388;
+        width: 5px;
+        height: 100%;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+
+    .desc-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 98%;
+    }
+    .notification-description{
+        font-family: Poppins;
+        font-size: 14px;
+        color: rgba(241.00000083446503, 241.00000083446503, 241.00000083446503, 1);
+    }
+
+    ::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #98A8F8;
+        border-radius: 7px;
+    }
+
+    a {
+        color: #98A8F8;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="lollipopUp">
+        <div class="logo-div">
+            <span class="lollipop">Lollipop</span>
+            <span class="ext">EXT</span>
+        </div>
+        <div class="separator"></div>
+        <div class="notifications">
+            <div class="new-notification">
+                <div class="general-header"></div>
+                <div class="desc-div">
+                    <span class="notification-description">LollipopEXT console</span>
+                    <a href="https://airness.eu/it/air-jordan-1-low-palomino">Pay now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

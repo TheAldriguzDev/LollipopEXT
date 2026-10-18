@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/settings.css">
+    <script src="../js/settings.js"></script>
+    <title>LollipopEXT - Settings</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="menu-div">
+            <div class="logo-div">
+                <div class="logo-name">
+                    <span class="Lollipop">Lollipop</span>
+                    <span class="EXT">EXT</span>
+                </div>
+                <div class="separator"></div>
+            </div>
+            <div class="menu-buttons">
+                <div id="dashboard-btn" class="dashboard-btn">
+                    <span>Dashboard</span>
+                </div>
+                <div id="sites-btn" class="sites-btn">
+                    <span>Sites</span>
+                </div>
+                <div id="profiles-btn" class="profiles-btn">
+                    <span>Profiles</span>
+                </div>
+                <div id="settings-btn" class="settings-btn">
+                    <span>Settings</span>
+                </div>
+                <div id="history-btn" class="history-btn">
+                    <span>History</span>
+                </div>
+            </div>
+            <div class="lollipop-information-div">
+                <div class="information-div">
+                    <div class="pulsating-div">
+                        <div class="stable-circle"></div>
+                        <div class="pulsating-circle"></div>
+                    </div>
+                    <span class="version">Version 0.02</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="main-content">
+            <span class="settings-txt">Settings</span>
+            <div class="success-webhook-div">
+                <span>Enter your success webhook below:</span>
+                <div class="success-webhook-buttons">
+                    <input class="success-webhook" id="success-webhook" type="text" placeholder="Enter your success webhook...">
+                    <div id="test-success" class="test-success">
+                        <span>Test</span>
+                    </div>
+                </div>
+            </div>
+            <div class="failed-webhook-div">
+                <span>Enter your fail webhook below:</span>
+                <div class="failed-webhook-buttons">
+                    <input class="failed-webhook" id="failed-webhook" type="text" placeholder="Enter your fail webhook...">
+                    <div id="test-failed" class="test-failed">
+                        <span>Test</span>
+                    </div>
+                </div>
+            </div>
+            <div id="success-notification" class="success-notification hide">
+                <div class="success-color"></div>
+                <div class="success-message">
+                    <span>Webhook tested!</span>
+                </div>
+            </div>
+            <div id="error-notification" class="error-notification hide">
+                <div class="error-color"></div>
+                <div class="error-message">
+                    <span>Webhook test failed!</span>
+                </div>
+            </div>
+            <div id="loading-notification" class="loading-notification hide">
+                <div class="loading-color"></div>
+                <div class="loading-message">
+                    <span>Testing the webhook</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

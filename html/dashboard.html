@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="../js/dashboard.js"></script>
+    <title>LollipopEXT - Dashboard</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="menu-div">
+            <div class="logo-div">
+                <div class="logo-name">
+                    <span class="Lollipop">Lollipop</span>
+                    <span class="EXT">EXT</span>
+                </div>
+                <div class="separator"></div>
+            </div>
+            <div class="menu-buttons">
+                <div id="dashboard-btn" class="dashboard-btn">
+                    <span>Dashboard</span>
+                </div>
+                <div id="sites-btn" class="sites-btn">
+                    <span>Sites</span>
+                </div>
+                <div id="profiles-btn" class="profiles-btn">
+                    <span>Profiles</span>
+                </div>
+                <div id="settings-btn" class="settings-btn">
+                    <span>Settings</span>
+                </div>
+                <div id="history-btn" class="history-btn">
+                    <span>History</span>
+                </div>
+            </div>
+            <div class="lollipop-information-div">
+                <div class="information-div">
+                    <div class="pulsating-div">
+                        <div class="stable-circle"></div>
+                        <div class="pulsating-circle"></div>
+                    </div>
+                    <span class="version">Version 0.02</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="main-content">
+            <div class="user-container">
+                <img id="user-photo" class="user-photo" src="../images/lolliround.png" alt="user image">
+                <div class="vertical-separator"></div>
+                <div class="user-info">
+                    <div class="welcome-div">
+                        <span class="welcome">Welcome back,</span>
+                        <span id="username" class="username">Not found</span>
+                    </div>
+                    <div class="license-div">
+                        <span class="license">License:</span>
+                        <span id="license-value" class="license-value">Not found</span>
+                    </div>
+                    <div class="license-type-div">
+                        <span class="license-type">License type:</span>
+                        <span id="license-type-value" class="license-type-value">Not found</span>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-view">
+                <div class="help-div">
+                    <span class="need-help">Need help?</span>
+                    <div class="discord-div">
+                        <span class="discord-span">Discord:</span>
+                        <span id="discord-url" class="discord-url" >Click here!</span>
+                    </div>
+                    <div class="guides-div">
+                        <span class="guides-span">Guides:</span>
+                        <span id="guides-url" class="guides-url">Click here!</span>
+                    </div>
+                </div>
+                <div class="socials-div">
+                    <span class="our-social">Our social</span>
+                    <div class="twitter-div">
+                        <span class="twitter-span">Twitter:</span>
+                        <span id="twitter-url" class="twitter-url" >Click here!</span>
+                    </div>
+                    <div class="instagram-div">
+                        <span class="instagram-span">Instagram:</span>
+                        <span id="instagram-url" class="instagram-url">Click here!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="success-changelogs">
+                <div class="success-count">
+                    <span class="analytics">Analytics:</span>
+                    <span class="total-txt">Total checkouts:</span>
+                    <div class="total-div">
+                        <span id="total-success-value" class="total-value">0</span>
+                    </div>
+                    <span class="success-txt">Successful checkouts:</span>
+                    <div class="success-div">
+                        <span id="success" class="success-value">0</span>
+                    </div>
+                    <span class="failed-txt">Failed checkouts:</span>
+                    <div class="failed-div">
+                        <span id="failed" class="failed-value">0</span>
+                    </div>
+                </div>
+                <div class="update-history">
+                    <span class="update-text">Changelog history:</span>
+                    <div class="update-div">
+                        <span class="update-title">Update 0.02 - 05/04/2023</span>
+                        <span class="subtitle">Lollipop</span>
+                        <span class="description">-> Fixed some GUI interactions</span>
+                        <span class="subtitle">Airness</span>
+                        <span class="description">-> Fixed module startup</span>
+                        <span class="subtitle">Snipes</span>
+                        <span class="description">-> Fixed some bugs</span>
+                        <span class="subtitle">Solebox</span>
+                        <span class="description">-> Fixed webhook</span>
+                        <span class="subtitle">LVR</span>
+                        <span class="description">-> Module unlocked</span>
+
+                        <span class="update-title">Update 0.01 - 12/03/2023</span>
+                        <span class="subtitle">Lollipop</span>
+                        <span class="description">-> Gui has been rewritten from scratch</span>
+                        <span class="subtitle">Airness</span>
+                        <span class="description">-> Module has been added</span>
+                        <span class="subtitle">Snipes</span>
+                        <span class="description">-> Module has been added</span>
+                        <span class="subtitle">Solebox</span>
+                        <span class="description">-> Module has been added</span>
+                        <span class="subtitle">LVR</span>
+                        <span class="description">-> Module has been added</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="success-notification" class="success-notification hide">
+                <div class="success-color"></div>
+                <div class="success-message">
+                    <span class="version-txt"></span>
+                </div>
+            </div>
+            <div id="error-notification" class="error-notification hide">
+                <div class="error-color"></div>
+                <div class="error-message">
+                    <span>Version checker failed!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
